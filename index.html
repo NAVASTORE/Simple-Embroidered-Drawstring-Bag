@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Embroidered Drawstring Bag | FASHION.ID</title>
+    <meta name="description" content="Tas drawstring bordir elegan dengan kompartemen basah & kering. Tahan air, kapasitas besar, dan desain stylish untuk berbagai kesempatan.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #FFF8E7;
+            --sage: #A9BA9D;
+            --olive: #D8DDC1;
+            --beige: #EEDFCC;
+            --charcoal: #5A5A5A;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(169,186,157,0.9) 0%, rgba(216,221,193,0.9) 100%);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .price-badge {
+            background: linear-gradient(135deg, #A9BA9D 0%, #D8DDC1 100%);
+            box-shadow: 0 4px 20px rgba(169,186,157,0.3);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--olive);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .social-proof-popup {
+            animation: slideIn 0.5s ease-out forwards;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .fade-out {
+            animation: fadeOut 0.5s ease-out forwards;
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        
+        .gallery-image {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .sticky-cta {
+            box-shadow: 0 -2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .scroll-down {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-15px);}
+            60% {transform: translateY(-7px);}
+        }
+        
+        /* OrderOnline Form Overrides */
+        .ooef {
+            background: rgba(255,255,255,0.8);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        .orderonline-embed-form button[type="submit"] {
+            background: linear-gradient(135deg, #A9BA9D 0%, #D8DDC1 100%) !important;
+            border: none !important;
+            color: white !important;
+            font-weight: 600 !important;
+            padding: 12px 24px !important;
+            border-radius: 8px !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .orderonline-embed-form button[type="submit"]:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 5px 15px rgba(169,186,157,0.4) !important;
+        }
+        
+        .orderonline-embed-form input,
+        .orderonline-embed-form select {
+            border-radius: 8px !important;
+            border: 1px solid #D8DDC1 !important;
+            padding: 12px 16px !important;
+        }
+        
+        .orderonline-embed-form input:focus,
+        .orderonline-embed-form select:focus {
+            border-color: #A9BA9D !important;
+            box-shadow: 0 0 0 2px rgba(169,186,157,0.2) !important;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding-top: 100px;
+            }
+            
+            .social-proof-popup {
+                width: 90%;
+                left: 5%;
+                right: 5%;
+                top: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold text-gray-900" style="font-family: 'Poppins'">FASHION.ID</span>
+                    </a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Fitur</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Galeri</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Testimoni</a>
+                    <a href="#order" class="bg-[#A9BA9D] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-[#8fa181] transition">Pesan Sekarang</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#features" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Fitur</a>
+                <a href="#gallery" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Galeri</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Testimoni</a>
+                <a href="#order" class="block px-3 py-2 text-base font-medium text-white bg-[#A9BA9D] rounded-md hover:bg-[#8fa181]">Pesan Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://cdn.shopify.com/s/files/1/0559/7193/8483/files/1_85cba12d-bae0-43cd-b181-506d3d0eeb19.gif?v=1753947982')">
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 hero-content">
+            <div class="text-center md:text-left md:w-1/2">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Simple Embroidered Drawstring Bag</h1>
+                <p class="text-xl text-white mb-8">Tas bordir elegan dengan kompartemen basah & kering. Praktis, stylish, dan siap menemani aktivitas harian Anda.</p>
+                
+                <div class="glass-card inline-block p-6 mb-8">
+                    <div class="flex items-center justify-center md:justify-start space-x-4">
+                        <div class="price-badge px-6 py-3 rounded-lg">
+                            <span class="text-white line-through text-lg">Rp351.522</span>
+                            <span class="text-white font-bold text-2xl block">Rp179.761</span>
+                        </div>
+                        <div class="bg-white px-4 py-2 rounded-lg">
+                            <span class="text-red-600 font-bold">Diskon 49%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="#order" class="bg-white text-[#5A5A5A] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">Pesan Sekarang</a>
+                    <a href="#video" class="flex items-center justify-center text-white border-2 border-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white hover:text-[#5A5A5A] transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Lihat Demo
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+                    <div class="flex items-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Gratis Ongkir</span>
+                    </div>
+                    <div class="flex items-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Garansi 30 Hari</span>
+                    </div>
+                    <div class="flex items-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Asli 100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-0 right-0 text-center scroll-down">
+            <a href="#features" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-[#EEDFCC]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5A5A5A] mb-4">Kenapa Memilih Tas Kami?</h2>
+                <p class="text-lg text-[#5A5A5A] max-w-3xl mx-auto">Desain elegan dengan fungsionalitas tinggi untuk memenuhi kebutuhan harian Anda</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Kompartemen Ganda</h3>
+                    <p class="text-gray-600 text-center">Memisahkan barang basah dan kering dengan kompartemen khusus untuk menjaga kebersihan.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Tahan Air</h3>
+                    <p class="text-gray-600 text-center">Terbuat dari kain Oxford berkualitas tinggi yang tahan air dan mudah dibersihkan.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Desain Multifungsi</h3>
+                    <p class="text-gray-600 text-center">Dapat digenggam, di satu bahu, atau di bahu ganda - sesuaikan dengan kebutuhan Anda.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="feature-icon mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Bordir Eksklusif</h3>
+                    <p class="text-gray-600 text-center">Detail bordir yang elegan dan tahan lama, memberikan kesan premium pada tas Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo Section -->
+    <section id="video" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5A5A5A] mb-4">Lihat Tas Kami dalam Aksi</h2>
+                <p class="text-lg text-[#5A5A5A] max-w-3xl mx-auto">Tonton video demo untuk melihat fitur dan keunggulan tas kami</p>
+            </div>
+            
+            <div class="bg-[#FFF8E7] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
+                <div class="aspect-w-16 aspect-h-9">
+                    <video class="w-full" controls poster="https://idealigth.com/cdn/shop/files/1_91812e65-e32e-4e29-8877-261cbebd6953_500x.jpg?v=1753947944">
+                        <source src="https://goods-vod.kwcdn.com/goods-video/9291bb6dcee40d832eadf3318b1fa4bf782fd5e9.f30.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-[#D8DDC1]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5A5A5A] mb-4">Galeri Produk</h2>
+                <p class="text-lg text-[#5A5A5A] max-w-3xl mx-auto">Lihat detail dan keindahan tas Simple Embroidered Drawstring Bag dari berbagai sudut</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-image overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://idealigth.com/cdn/shop/files/1_91812e65-e32e-4e29-8877-261cbebd6953_500x.jpg?v=1753947944" alt="Simple Embroidered Drawstring Bag - Tampak Depan" class="w-full h-auto">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://idealigth.com/cdn/shop/files/2_590a5259-4e9f-43a5-a702-af5cdd92dc5d_500x.jpg?v=1753947944" alt="Simple Embroidered Drawstring Bag - Tampak Samping" class="w-full h-auto">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://idealigth.com/cdn/shop/files/3_1455e0a4-c3d6-4803-8daa-8a70e9956f9e_500x.jpg?v=1753947944" alt="Simple Embroidered Drawstring Bag - Detail Bordir" class="w-full h-auto">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://idealigth.com/cdn/shop/files/4_c66091a3-848e-4a75-9e7d-9b6ec16d55df_500x.jpg?v=1753947945" alt="Simple Embroidered Drawstring Bag - Kompartemen Dalam" class="w-full h-auto">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://idealigth.com/cdn/shop/files/5_57f3ee06-c76e-4753-b24d-f9b37716d669_500x.jpg?v=1753947945" alt="Simple Embroidered Drawstring Bag - Tampak Atas" class="w-full h-auto">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://idealigth.com/cdn/shop/files/6_f283d8ee-0125-4345-b76a-3732bd7764d2_500x.jpg?v=1753947945" alt="Simple Embroidered Drawstring Bag - Digunakan" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5A5A5A] mb-4">Spesifikasi Produk</h2>
+                <p class="text-lg text-[#5A5A5A] max-w-3xl mx-auto">Detail lengkap tentang Simple Embroidered Drawstring Bag</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <img src="https://idealigth.com/cdn/shop/files/7_eb0d3f0e-2445-4879-8dc3-5be5864de0ad_500x.jpg?v=1753947945" alt="Simple Embroidered Drawstring Bag - Ukuran" class="w-full rounded-xl shadow-lg">
+                </div>
+                
+                <div>
+                    <div class="bg-[#FFF8E7] p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold text-[#5A5A5A] mb-6">Detail Produk</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex">
+                                <div class="w-1/3 font-medium text-gray-700">Bahan</div>
+                                <div class="w-2/3">Kain Oxford berkualitas tinggi</div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/3 font-medium text-gray-700">Berat</div>
+                                <div class="w-2/3">336 gram</div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/3 font-medium text-gray-700">Ukuran</div>
+                                <div class="w-2/3">23 × 16 × 4 cm / 9,1 × 6,3 × 1,6 inci</div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/3 font-medium text-gray-700">Warna</div>
+                                <div class="w-2/3">Krem dengan bordir elegan</div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-1/3 font-medium text-gray-700">Fitur</div>
+                                <div class="w-2/3">
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>Dapat dilipat untuk penyimpanan ringkas</li>
+                                        <li>Dapat digenggam, di satu bahu, atau di bahu ganda</li>
+                                        <li>Kompartemen basah dan kering</li>
+                                        <li>Desain bordir stylish dan elegan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-[#EEDFCC]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5A5A5A] mb-4">Apa Kata Pelanggan Kami?</h2>
+                <p class="text-lg text-[#5A5A5A] max-w-3xl mx-auto">Testimoni jujur dari pelanggan yang sudah menggunakan produk kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#A9BA9D] flex items-center justify-center text-white font-bold text-xl">H</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">hanaherbalhni</h4>
+                            <p class="text-sm text-gray-500">Jakarta</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600">"Tasnya sangat bagus dan berkualitas. Bahan tebal dan bordirnya rapi. Saya suka sekali dengan kompartemennya yang bisa memisahkan barang basah dan kering. Cocok banget buat ke gym atau jalan-jalan."</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#A9BA9D] flex items-center justify-center text-white font-bold text-xl">A</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">aisyatulsaadah</h4>
+                            <p class="text-sm text-gray-500">Surabaya</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600">"Pengiriman cepat dan packing rapi. Tasnya lebih bagus dari yang saya bayangkan. Desainnya simple tapi elegan, bordirnya juga halus dan rapi. Saya sudah pakai beberapa kali dan bahannya tetap bagus."</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#A9BA9D] flex items-center justify-center text-white font-bold text-xl">Z</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">zahwaama</h4>
+                            <p class="text-sm text-gray-500">Malang</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600">"Saya beli 2 warna untuk koleksi. Tasnya ringan tapi kuat, muat banyak barang. Yang saya suka adalah bisa dipakai dengan berbagai cara - digenggam, di bahu, atau di punggung. Desain bordirnya juga unik dan tidak mudah luntur."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#5A5A5A] mb-4">Pesan Simple Embroidered Drawstring Bag Sekarang</h2>
+                <p class="text-lg text-[#5A5A5A] max-w-3xl mx-auto">Dapatkan diskon spesial 49% hanya untuk hari ini!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-[#FFF8E7] p-8 rounded-xl shadow-xl mb-8">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold text-[#5A5A5A]">Simple Embroidered Drawstring Bag</h3>
+                            <div class="text-right">
+                                <span class="text-gray-500 line-through">Rp351.522</span>
+                                <span class="block text-2xl font-bold text-[#A9BA9D]">Rp179.761</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-medium">Stok Tersedia</span>
+                                <span class="font-bold">12 pcs</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-[#A9BA9D] h-2.5 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-medium">Diskon Berakhir Dalam</span>
+                            </div>
+                            <div class="grid grid-cols-4 gap-2 text-center">
+                                <div class="bg-white p-2 rounded-lg">
+                                    <span class="block text-xl font-bold" id="countdown-hours">08</span>
+                                    <span class="text-xs">Jam</span>
+                                </div>
+                                <div class="bg-white p-2 rounded-lg">
+                                    <span class="block text-xl font-bold" id="countdown-minutes">23</span>
+                                    <span class="text-xs">Menit</span>
+                                </div>
+                                <div class="bg-white p-2 rounded-lg">
+                                    <span class="block text-xl font-bold" id="countdown-seconds">45</span>
+                                    <span class="text-xs">Detik</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">Keuntungan Belanja di FASHION.ID:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A9BA9D] mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Gratis Ongkir ke Seluruh Indonesia</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A9BA9D] mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Garansi 30 Hari Uang Kembali</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A9BA9D] mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Packing Rapih dan Aman</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A9BA9D] mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Customer Service 24 Jam</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex items-center justify-center space-x-4">
+                            <a href="https://wa.me/6285236699497?text=Saya%20ingin%20memesan%20Simple%20Embroidered%20Drawstring%20Bag" class="bg-green-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29-3.51c.172.246.506.396.878.396.371 0 .705-.15.877-.396.171-.246.172-.578 0-.824-.171-.247-.506-.396-.877-.396-.372 0-.706.15-.878.396-.171.246-.171.578 0 .824m3.098 0c.172.246.506.396.878.396.371 0 .705-.15.877-.396.171-.246.171-.578 0-.824-.172-.247-.506-.396-.877-.396-.372 0-.706.15-.878.396-.171.246-.171.578 0 .824M12 .5C5.663.5.5 5.663.5 12c0 2.166.629 4.181 1.713 5.88L.5 23.5l5.62-1.713A11.47 11.47 0 0012 23.5c6.337 0 11.5-5.163 11.5-11.5S18.337.5 12 .5z"/>
+                                </svg>
+                                Pesan via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                        <h4 class="font-bold mb-4">Metode Pembayaran:</h4>
+                        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+                            <img src="https://cdn.shopify.com/s/files/1/0559/7193/8483/files/bca.png?v=1753947982" alt="BCA" class="h-10 object-contain">
+                            <img src="https://cdn.shopify.com/s/files/1/0559/7193/8483/files/mandiri.png?v=1753947982" alt="Mandiri" class="h-10 object-contain">
+                            <img src="https://cdn.shopify.com/s/files/1/0559/7193/8483/files/bni.png?v=1753947982" alt="BNI" class="h-10 object-contain">
+                            <img src="https://cdn.shopify.com/s/files/1/0559/7193/8483/files/bri.png?v=1753947982" alt="BRI" class="h-10 object-contain">
+                            <img src="https://cdn.shopify.com/s/files/1/0559/7193/8483/files/gopay.png?v=1753947982" alt="Gopay" class="h-10 object-contain">
+                            <img src="https://cdn.shopify.com/s/files/1/0559/7193/8483/files/ovo.png?v=1753947982" alt="OVO" class="h-10 object-contain">
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-[#FFF8E7] p-8 rounded-xl shadow-xl">
+                        <h3 class="text-2xl font-bold text-[#5A5A5A] mb-6">Form Pemesanan</h3>
+                        
+                        <!-- OrderOnline Embed Code - v8.0.4 -->
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="nava" data-product-slug="simple-embroidered-drawstring-bag" data-product-id="688cbf1da9bcf3a65d066056" id="oo-embed-form-simple-embroidered-drawstring-bag-9998" data-origin="orderonline">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                        <script>
+                            if (typeof xLogError != 'function') {
+                                var xLogError = function (error) {
+                                    var req = new XMLHttpRequest();
+                                    var payload = JSON.stringify({
+                                        url: document.location.href,
+                                        line: error.line,
+                                        stack: error.stack
+                                    });
+                                    var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                    req.open('POST', 'https://api.orderonline.id/log', true);
+                                    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                    req.send(params);
+                                };
+                            }
+                            try {
+                                if (typeof xEmbedScript != 'function') {
+                                    var xEmbedScript = function () {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                    };
+                                }
+                                if (typeof xEmbedInit != 'function') {
+                                    var xEmbedInit = function (w, n) {
+                                        if (w.ooe) return;
+                                        n = w.ooe = function() {
+                                            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                        };
+                                        if (!w._ooe) w._ooe = n;
+                                        n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                    };
+                                }
+                                xEmbedInit(window);
+                                ooe('setup', 'redirect', 'https://nava.orderonline.id');
+                                ooe('init', '5f119cd08dcbdb2737678706', '688cbf1da9bcf3a65d066056', '688cbf1da9bcf3a65d066057', 'oo-embed-form-simple-embroidered-drawstring-bag-9998', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+                                if (!window.jQuery) {
+                                    !function(w, d, e, v, id, t, s) {
+                                        if (d.getElementById(id)) return;
+                                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                        t.addEventListener('load', xEmbedScript);
+                                        s = d.getElementsByTagName(e)[0];
+                                        s.parentNode.insertBefore(t, s);
+                                    }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                } else {
+                                    xEmbedScript();
+                                }
+                            } catch (e) {
+                                xLogError(e);
+                                throw e;
+                            }
+                        </script>
+                        <!-- End OrderOnline Embed Code -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
